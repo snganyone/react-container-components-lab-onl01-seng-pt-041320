@@ -38,7 +38,7 @@ class SearchableMovieReviewsContainer extends Component{
 
     handleSubmit = event => {
         event.preventDefault();
-        this.handleSubmit(this.state.searchTerm);
+        this.handleInput(this.state.searchTerm);
     }
 
     componentDidMount(){
