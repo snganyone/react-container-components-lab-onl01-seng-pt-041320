@@ -22,18 +22,22 @@ class LatestMovieReviewsContainer extends Component{
         .then(data => this.setState({ reviews: data.results}))
     }
 
-    renderReviews = () => {
-        return this.state.reviews.map((review, i) => {
-            return(
-                <div key={i}>
-                <MovieReviews />
-                </div>
-            )
-        })
-    }
+    // renderReviews = () => {
+    //     return this.state.reviews.map((review, i) => {
+    //         return(
+    //             <div key={i}>
+                
+    //             </div>
+    //         )
+    //     })
+    // }
 
     render(){
-            return(this.renderReviews())
+            return(
+                <div className="latest-movie-reviews">
+                    <MovieReviews reviews = {this.state.reviews}/>
+                </div>
+            )
     }
     
 }
