@@ -8,7 +8,7 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/search.json?'
 
 // Code SearchableMovieReviewsContainer Here
 
-class SearchableMovieReviewsContainer extends React.Component{
+class SearchableMovieReviewsContainer extends Component{
     constructor(){
         super();
 
@@ -26,7 +26,9 @@ class SearchableMovieReviewsContainer extends React.Component{
 
     render(){
         return(
-            <div></div>
+            <div className="searchable-movie-reviews">
+                <MovieReviews reviews = {this.state.reviews}/>
+            </div>
         )
     }
 }
