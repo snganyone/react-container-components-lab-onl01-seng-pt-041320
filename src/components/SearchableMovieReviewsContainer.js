@@ -27,6 +27,12 @@ class SearchableMovieReviewsContainer extends Component{
     render(){
         return(
             <div className="searchable-movie-reviews">
+                <form align="right">
+                    <label>Enter a Search Term:</label>
+                    <input type="text" />
+                    <input type="submit" />
+                </form>
+
                 <MovieReviews reviews = {this.state.reviews}/>
             </div>
         )
