@@ -3,13 +3,13 @@ import React from 'react';
 
 const MovieReviews = props => (
     <div className="review-list">
-        <div className="review">
-            <ul>
-            {props.reviews.map((r, i) => (
+        <ul>
+        {props.reviews.map((r, i) => (
+            <div className="review">
                 <li key={i}>{r.display_title}</li>
-            ))}
-            </ul>
-        </div>
+            </div>
+        ))}
+        </ul>
     </div>
 )
 
